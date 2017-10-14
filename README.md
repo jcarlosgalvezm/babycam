@@ -2,4 +2,4 @@
 
 ## Hardware:
 - Raspberry Pi 3
--Pi NOIR Camera V2
+- Pi NOIR Camera V2
