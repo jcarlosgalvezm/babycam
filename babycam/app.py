@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from importlib import import_module
 import os
@@ -8,9 +8,9 @@ from flask import Flask, render_template, Response
 if os.environ.get('CAMERA'):
     Camera = import_module('camera_' + os.environ['CAMERA']).Camera
 else:
-    from modules.camera import Camera
+    from babycam.modules.camera import Camera
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 
 @app.route('/')

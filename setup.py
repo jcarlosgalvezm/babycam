@@ -24,16 +24,18 @@ setup(
     author_email='jcarlosgalvezm@gmail.com',
     description='BabyMonitor with motion detection',
     long_description=get_readme(),
-    license='Apache Software License (http://www.apache.org/licenses/LICENSE-2.0)',
+    license='GPLv3',
     keywords='raspberry pi cam baby streaming',
     url='https://github.com/jcarlosgalvezm/babycam/',
-    packages=find_packages('babycam'),
-    package_dir={'': 'babycam'},
+    packages=find_packages(),
     package_data={
-        '': ['*.html']
+        '': ['*.html'],
+        'babycam': ['templates/*.html'],
     },
     include_package_data=True,
-    scripts=['babycam/app.py'],
+    platforms='raspbian',
+    scripts=['babycam/babystream'],
+    zip_safe=False,
     install_requires=open('requirements.txt').read().split(),
     classifiers=[
         'Topic :: Utilities',
