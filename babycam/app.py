@@ -8,7 +8,7 @@ from flask import Flask, render_template, Response
 if os.environ.get('CAMERA'):
     Camera = import_module('camera_' + os.environ['CAMERA']).Camera
 else:
-    from .modules.camera import Camera
+    from modules.camera import Camera
 
 app = Flask(__name__)
 
