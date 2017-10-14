@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-@author: SCMSpain
+@author: Carlos Gálvez
 """
-import os
 from codecs import open
 from setuptools import find_packages, setup
 
