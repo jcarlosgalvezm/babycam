@@ -34,7 +34,7 @@ setup(
     },
     include_package_data=True,
     platforms='raspbian',
-    scripts=['babycam/babystream'],
+    scripts=['babycam/babystream', 'babycam/babyconfig'],
     zip_safe=False,
     install_requires=open('requirements.txt').read().split(),
     classifiers=[
