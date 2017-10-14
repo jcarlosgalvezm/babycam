@@ -6,4 +6,4 @@ MarkupSafe==1.0
 picamera==1.13
 Werkzeug==0.12.2
 numpy==1.12.1
-instapush==0.1.12
+instapush==0.1.2
