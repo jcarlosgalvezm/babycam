@@ -1,0 +1,10 @@
+####################
+# BABYCAM CFG FILE #
+####################
+---
+usercfg:
+	instapush:
+		appid=''
+		secret=''
+
+	babyname: ''
