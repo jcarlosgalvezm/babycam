@@ -3,7 +3,7 @@
 from importlib import import_module
 import os
 from flask import Flask, render_template, Response
-from babycam.modules.camera import Camera
+from babycam.modules.camera import BaseCamera as Camera
 
 app = Flask(__name__, template_folder='templates')
 
