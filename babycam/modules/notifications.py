@@ -1,5 +1,6 @@
 from instapush import Instapush, App
 import time
+import yaml
 
 
 class Notify(object):
@@ -9,7 +10,7 @@ class Notify(object):
     
     @staticmethod
     def readcfg():
-        with open('config.yml', 'r', enconding='utf-8') as yml:
+        with open('config.yml', 'r', encoding='utf-8') as yml:
             cfg = yaml.safe_load(yml)
 
         return cfg['usercfg']['babyname'], cfg['usercfg']['appid'], cfg['usercfg']['secret']
