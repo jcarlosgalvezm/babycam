@@ -8,7 +8,5 @@ uninstall: clean
 	
 clean:
 	sudo rm -rf build dist $(PACKAGE).egg-info docs-api tmp .cache
-	sudo rm /usr/local/bin/babystream
-	sudo rm /usr/local/bin/babyconfig	
 	sudo find . -name "*.pyc" -exec rm -rf {} \;
 
